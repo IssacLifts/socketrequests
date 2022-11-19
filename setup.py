@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+import twine
 
 VERSION = '0.0.1'
 DESCRIPTION = 'A http request library made using sockets'
@@ -6,7 +7,7 @@ LONG_DESCRIPTION = 'A library that sends http requests using sockets which is 10
 
 # Setting up
 setup(
-    name="socketrequest",
+    name="requestsockets",
     version=VERSION,
     author="Issac",
     description=DESCRIPTION,
