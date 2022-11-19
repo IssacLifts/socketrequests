@@ -64,7 +64,7 @@ class Socket:
         payload: str = f"{http_request} {(self._server.path if self._server.path is not None else '/')}{(f'?{self._server.query}' if self._server.query is not None else '')} HTTP/1.1\r\nHost: {self._server.host}"
         
         for header in self.default_headers:
-            if header.split(":")[0] not in headers if header is not None else {}:
+            if header.split(":")[0] not in headers if headers is not None else {}:
                 payload += f"\r\n{header}"
         
         if headers is not None:
