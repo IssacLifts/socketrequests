@@ -45,6 +45,6 @@ socketrequest.post("https://www.youtubelink/random", port=80, headers=["User-Age
 
 ### How to Install
 ```python
-pip install socketrequest
+pip install requestsockets
 ```
 
